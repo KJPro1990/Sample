@@ -1,0 +1,12 @@
+package jp.co.demo.sample;
+
+import java.io.Serializable;
+
+@Data
+public class SampleResource implements Serializable {
+    private static final long serialVersionUID = 1L;
+    
+    private int id;
+    private String cd;
+    private String name;
+}

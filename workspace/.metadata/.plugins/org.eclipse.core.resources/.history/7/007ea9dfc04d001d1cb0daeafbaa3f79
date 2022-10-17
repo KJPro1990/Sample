@@ -1,0 +1,5 @@
+package jp.co.demo.sample;
+
+public class SampleRestController {
+
+}
