@@ -1,0 +1,46 @@
+●STSのインストール
+URL：https://spring.io/tools
+日本語化：https://mergedoc.osdn.jp
+1. Windows版をダウンロード
+2. jarファイルをzipに変換
+3. Cドライブ直下にstsフォルダ作成
+4. stsフォルダにzipを解凍
+5. contents.zipを解凍
+6. STS～RELEASEフォルダをCドライブ直下に移動
+7. STS～RELEASEフォルダにworkspaceフォルダを作成
+8. STS起動
+9. pleiadesの日本語化ツールを解凍し、setup.exeを起動
+
+●Spring bootプロジェクト作成
+URL：
+https://qiita.com/t-yama-3/items/969825d5c1bc4a16866d
+https://camp.trainocate.co.jp/magazine/spring-batch/
+依存関係は以下を指定
+・Spring Boot DevTools、Lombok、JDBC API、Mybatis、MySQL、Thymleaf
+・Webの場合、Spring Webを指定
+・バッチの場合、Spring Batchを指定
+
+●Lombokのインストール
+https://projectlombok.org/download
+
+●Mybatisの設定
+URL：https://zenn.dev/re24_1986/articles/5bf56ef844f6c3
+URL：https://itmaroblog.com/spring-mybatis/#toc3
+ソースを参考に作成
+
+●Thymeleaf-Javascript,CSS設定
+https://trans-it.net/spring-boot-thymeleaf-how-to-put-css/
+https://qiita.com/kohii/items/00ea54b993f4c325691f
+
+●POI
+https://www.apache.org/dyn/closer.lua/poi/release/bin/poi-bin-5.2.3-20220909.zip
+
+●Apache-Commons
+https://commons.apache.org/proper/commons-lang/download_lang.cgi
+
+●LibreOffice
+https://ja.libreoffice.org/download/download/
+
+●JODConverter
+http://www.ne.jp/asahi/hishidama/home/tech/java/pdf/jodconverter/jodconverter.html
+https://mvnrepository.com/artifact/org.jodconverter/jodconverter-core/4.1.0
