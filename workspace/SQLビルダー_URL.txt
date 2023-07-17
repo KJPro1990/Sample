@@ -1,0 +1,7 @@
+・Gradle
+https://sebenkyo.com/2022/05/06/post-2445/
+
+・実装
+https://qiita.com/HiroyaEnd/items/7281f7e5db30ef5a6ce6
+https://help.talend.com/r/ja-JP/7.3/studio-user-guide/creating-queries-using-sqlbuilder
+https://mybatis.org/mybatis-3/ja/statement-builders.html
