@@ -11,7 +11,11 @@ $(function() {
 		record: data,
 		actions: {
 			ログイン: function() {
-				console.log(JSON.stringify(w2ui["myForm"].record));
+				var formObject = $('#main')[0]
+				var windowMain = window.open('about:blank', 'mainA')
+				formObject.target = 'mainA'
+				formObject.submit()
+				windowMain.focus()
 			}
 		}
 	});

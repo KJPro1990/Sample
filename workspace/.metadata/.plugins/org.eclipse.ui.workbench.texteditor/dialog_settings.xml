@@ -10,11 +10,19 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="   &#x09;"/>
+		<item key="selection" value="com.example.demo.sample"/>
 		<list key="findhistory">
+			<item value="sampleResource"/>
+			<item value="index"/>
+			<item value="SampleMapper"/>
+			<item value="jp.co.demo.sample"/>
+			<item value="findById"/>
+			<item value="   "/>
 			<item value="    "/>
 		</list>
 		<list key="replacehistory">
+			<item value="com.example.demo.sample"/>
+			<item value="&#x09;"/>
 			<item value="   &#x09;"/>
 		</list>
 	</section>

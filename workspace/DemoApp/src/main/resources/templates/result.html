@@ -15,6 +15,32 @@
 	<p th:text="'id: ' + ${sampleResource.id}" />
 	<p th:text="'content: ' + ${sampleResource.content}" />
 	<a href="/index.html">Submit another message</a>
+
+	<div id="activeForm" style="width: 100%; height: 200px;"></div>
+	<div id="activeGrid" style="width: 100%; height: 350px;"></div>
+	
+	<script type="text/javascript" th:inline="javascript">
+		$(function() {
+			$('#activeForm').w2form({
+				name: 'activeForm',
+				box: '#activeForm',
+				fields: /*[[${formFields}]]*/[]
+			})
+
+			$('#activeGrid').w2grid({
+				name: 'activeGrid',
+				box: '#activeGrid',
+				show: {
+					toolbar: true,
+					footer: true,
+					lineNumbers: true,
+				},
+				columns: /*[[${gridColumns}]]*/[],
+				multiSearch: true,
+				searches: /*[[${gridSearches}]]*/[]
+			});
+		});
+	</script>
 </body>
 
 </html>

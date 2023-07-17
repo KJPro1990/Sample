@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.sample.SampleMapper">
+	<select id="findAll" resultType="com.example.demo.sample.SampleResource">
+		select * from sample
+	</select>
+	<select id="findById" parameterType="integer" resultType="com.example.demo.sample.SampleResource">
+		select id, cd, name from sample where id = #{id}
+	</select>
+	<select id="findKeibaData" parameterType="integer" resultType="hashmap">
+		select ra.RaceDate, r.First, r.WinReturn + r.TrioReturn, r.WinReturn + r.TrifectaReturn
+		from race ra
+		left outer join result r
+		on r.RaceDate = ra.RaceDate
+		and r.Place = ra.Place
+		and r.RaceNo = ra.RaceNo
+		where ra.RaceDate = '2012/01/05'
+	</select>
+	<insert id="insert" parameterType="com.example.demo.sample.SampleResource">
+		insert into sample(cd, name) values(#{cd}, #{name})
+	</insert>
+	<update id="update" parameterType="com.example.demo.sample.SampleResource">
+		update sample set cd = #{cd}, name = #{name} where id = #{id}
+	</update>
+	<delete id="delete" parameterType="integer">
+		delete from sample where id = #{id}
+	</delete>
+	<select id="getSql" parameterType="integer" resultType="string">
+		select sql_test from sample where id = #{id}
+	</select>
+	<select id="testGeneralSearch" parameterType="hashmap" resultType="hashmap">
+		${sql}
+	</select>
+</mapper>

@@ -1,5 +1,0 @@
-package jp.co.demo.sample;
-
-public class NotFoundException extends Exception {
-
-}
