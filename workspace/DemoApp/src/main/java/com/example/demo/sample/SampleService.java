@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -18,11 +19,17 @@ import lombok.RequiredArgsConstructor;
 class SampleService {
 
 	private final SampleMapper mapper;
+	private final NamedParameterJdbcTemplate template;
 
 	public SampleResource findById(int id) throws NotFoundException {
 		try {
-			String sql = mapper.getSql(0);
-			Map<String, Object> whereMap = new HashMap<>();
+//			var sql = mapper.getSql(10);
+//			var sql = mapper.findKeibaData(10);
+			var sql = "select id, sql_test from sample where id = :id";
+			var conditions = Map.of("id", 10);
+			var aaa = template.queryForList(sql, conditions);
+
+			var whereMap = new HashMap<String, Object>();
 			whereMap.put("sql", sql);
 			whereMap.put("place", "札幌");
 			var result = mapper.testGeneralSearch(whereMap);

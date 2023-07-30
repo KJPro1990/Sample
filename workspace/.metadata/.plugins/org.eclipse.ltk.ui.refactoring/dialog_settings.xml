@@ -15,5 +15,6 @@
 		<item key="CREATE_GETTER_SETTER" value="false"/>
 		<item key="CREATE_TOPLEVEL" value="true"/>
 		<item key="qualifyReferences" value="false"/>
+		<item key="deleteSubPackages" value="false"/>
 	</section>
 </section>

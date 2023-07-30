@@ -10,7 +10,7 @@ public interface SampleMapper {
 	List<SampleResource> findAll();
 
 	SampleResource findById(int id);
-	List findKeibaData(int id);
+	List<Map<String, Object>> findKeibaData(int id);
 
 	int insert(SampleResource resource);
 

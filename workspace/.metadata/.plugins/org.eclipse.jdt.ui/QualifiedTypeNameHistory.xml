@@ -12,7 +12,6 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
-    <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
     <fullyQualifiedTypeName name="org.apache.ibatis.javassist.expr.NewArray"/>
     <fullyQualifiedTypeName name="com.example.demo.jp.co.demo.sample.SampleResource"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
@@ -31,13 +30,22 @@
     <fullyQualifiedTypeName name="com.example.demo.sample.W2uiObjectDynamicGenerator.GridSearchCondition"/>
     <fullyQualifiedTypeName name="java.lang.Record"/>
     <fullyQualifiedTypeName name="org.springframework.jdbc.core.SqlParameter"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="org.apache.tomcat.util.buf.StringUtils"/>
     <fullyQualifiedTypeName name="org.apache.commons.lang3.RegExUtils"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.apache.commons.lang3.StringUtils"/>
-    <fullyQualifiedTypeName name="lombok.experimental.var"/>
     <fullyQualifiedTypeName name="org.springframework.util.concurrent.CompletableToListenableFutureAdapter"/>
     <fullyQualifiedTypeName name="java.util.stream.Stream"/>
+    <fullyQualifiedTypeName name="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate"/>
+    <fullyQualifiedTypeName name="lombok.experimental.var"/>
+    <fullyQualifiedTypeName name="ch.qos.logback.core.joran.conditional.Condition"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ControllerAdvice"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ExceptionHandler"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+    <fullyQualifiedTypeName name="org.springframework.expression.spel.ast.Assign"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="org.thymeleaf.processor.element.AbstractAttributeModelProcessor"/>
 </qualifiedTypeNameHistroy>
